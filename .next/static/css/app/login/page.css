@@ -1,0 +1,128 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./src/app/login/login.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,800");
+.login {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background: #f6f5f7;
+  display: flex;
+  overflow: hidden;
+}
+
+.login-modal {
+  width: 80%;
+  height: 70%;
+  background: white;
+  margin: auto;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 30px;
+  display: flex;
+}
+.login-modal__left, .login-modal__right {
+  padding: 2rem;
+  font-weight: 700;
+}
+.login-modal__left {
+  width: 50%;
+}
+.login-modal__input {
+  height: 60px;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+  width: 80%;
+  font-size: 16px;
+  padding: 2rem;
+}
+.login-modal__input:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+.login-modal__input:active {
+  transform: scale(0.95);
+}
+.login-modal__input:focus {
+  border: 2px solid grey;
+}
+.login-modal__right {
+  padding-top: 8rem;
+  border-radius: 0 30px 30px 0;
+  background: linear-gradient(90deg, #ea99da 0%, #5d6cf9 100%);
+  color: white;
+}
+.login-modal__subtitle {
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.pokedex-logo {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  width: 8%;
+  transform: rotate(10deg);
+  animation: pokedex-logo 0.6s infinite alternate linear;
+}
+@keyframes pokedex-logo {
+  to {
+    transform: translate(0, 1rem) rotate(10deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .login-modal__right {
+    display: none;
+  }
+  .login-modal__left {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .login-modal {
+    width: 60%;
+  }
+  .pokedex-logo {
+    bottom: 4rem;
+    right: 4rem;
+    width: 10%;
+  }
+}
+.credits {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 2rem;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./src/components/Loader/Loader.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.loader-container {
+  margin-top: 2rem;
+  text-align: -webkit-center;
+}
+
+.loader {
+  top: 42%;
+  left: 42%;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #5d6cf9;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
